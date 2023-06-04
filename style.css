@@ -1,0 +1,225 @@
+body {
+    background-color: #c5e4e7;
+  }
+  h1 {
+    color: #00464b;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 2%;
+  }
+  .main_container {
+    /* height: 100vh; */
+
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+  }
+  .box_calculator {
+    height: 100%;
+    width: 72%;
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+  }
+  .calculation {
+    /* height: 100%; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5rem;
+  }
+  .texts {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 2%;
+    font-size: 23px;
+    color: #8f8888;
+    font-weight: 600;
+    font-family: arial;
+  }
+  .results {
+    /* height: 80%; */
+    width: 50%;
+    background-color: #00464b;
+    padding: 3%;
+    border-radius: 20px;
+  }
+  .btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .btn {
+    background-color: #00464b;
+    width: calc(38.33% - 8%);
+    height: 5vh;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .btn:active,
+  .btn:hover {
+    background-color: #49ceaf;
+    border:none;
+    color: #00464b;
+  }
+  .spending_money,
+  .number_of_people {
+    border-bottom: 3px solid #c7c7c7;
+    /* border: 1px solid gray; */
+    /* border-top: 2px solid #dfdfdf; */
+    height: 4vh;
+    /* width: 88%; */
+    font-size: 1.6rem;
+    /* border: none; */
+    text-align: end;
+    border-radius: 7px;
+    border-top: none;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    /* margin-right: 4rem; */
+    padding-right: 1rem;
+    font-weight: 600;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    background-color: #effbfa;
+    color: #2a8288;
+  }
+
+  .custom {
+    width: calc(38.33% - 8%);
+    height: 3rem;
+    margin-top: -14px;
+    text-align: center;
+    border: none;
+    background: #e2fffe;
+font-size: 1.6rem;
+    font-weight: 600;
+  }
+  input:focus {
+    border: 4px solid #5cf5d1;
+    outline: none; /* Removes the default focus outline */
+  }
+  .focus {
+    /* display: none; */
+    border: 4px solid orange;
+  }
+  .posisioning {
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+    color: #fffefe;
+    font-weight: 600;
+    font-family: arial;
+  }
+  .title {
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    margin: 0;
+    font-weight: 600;
+  }
+  .description {
+    font-size: 1rem;
+    color: #638b7d;
+  }
+  .aligning {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .reset {
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 10rem;
+    border-radius: 8px;
+    /* padding-top: 1rem; */
+    font-size: 1.2rem;
+    /* padding-bottom: 1rem; */
+    text-align: center;
+    background-color: #49ceaf;
+    color: #1b5447;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+  }
+  .reset:hover {
+    background-color: #52e0bf;
+  }
+  .price {
+    font-size: 1.7rem;
+    margin: 0;
+    color: #49ceaf;
+  }
+  #not_zero {
+    display: none;
+    color: orange;
+  }
+  .dollar {
+    height: 1.2rem;
+    width: 1.2rem;
+    position: relative;
+    top: -2.5rem;
+    left: 1rem;
+  }
+  .user {
+    height: 1.2rem;
+    width: 1.2rem;
+    position: relative;
+    top: -2.5rem;
+    left: 1rem;
+  }
+  @media only screen and (max-width: 1200px) {
+    .main_container {
+      padding: 0;
+      width: 100%;
+    }
+    .box_calculator {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+    .calculation {
+      width: 91%;
+      /* padding-left: 7%; */
+      padding-bottom: 1rem;
+      padding-right: 0;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .texts {
+      font-size: 19px;
+    }
+    .spending_money,
+    .number_of_people {
+      font-size: 1.2rem;
+    }
+    .results {
+      width: 86%;
+      /* margin-top: 1rem; */
+      /* height: 30vh; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+    .btn {
+      width: calc(55.33% - 8%);
+    }
+    .custom {
+      width: calc(55.33% - 8%);
+    }
+    .reset {
+      margin-top: 0rem;
+    }
+  }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Spliter</h1>
+    <div class="main_container">
+      <div class="box_calculator">
+        <div class="calculation">
+          <p class="texts">Bill</p>
+          <input
+            type="number"
+            class="spending_money"
+            placeholder="0"
+            id="spending_money"
+            name="spending_money"
+          />
+          <img class="dollar" src="dollar-symbol.png" alt="" />
+          <p style="margin-top: 2rem" class="texts">Select Tip %</p>
+          <div class="btns">
+            <button class="btn">10%</button>
+            <button class="btn">15%</button>
+            <button class="btn">20%</button>
+            <button class="btn">25%</button>
+            <button class="btn">50%</button>
+            <input
+              class="custom"
+              type="number"
+              placeholder="Custom"
+              id="custom_percentage_input"
+            />
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <p class="texts">Number of People</p>
+            <p id="not_zero" class="texts">Can't Be Zero</p>
+          </div>
+          <input
+            class="number_of_people"
+            type="number"
+            placeholder="0"
+            id="number_of_people"
+          />
+          <img class="user" src="user.png" alt="" />
+        </div>
+        <div class="results">
+          <div class="aligning">
+            <p class="title">Tip Amount</p>
+            <div class="posisioning">
+              <p class="description">/ Person</p>
+              <p class="price">$0.00</p>
+            </div>
+          </div>
+          <div class="aligning">
+            <p class="title">Total</p>
+            <div class="posisioning">
+              <p class="description">/ Person</p>
+              <p class="price" id="total">$0.00</p>
+            </div>
+          </div>
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
